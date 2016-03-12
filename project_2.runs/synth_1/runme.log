@@ -1,0 +1,525 @@
+
+*** Running vivado
+    with args -log top_soccer.vds -m64 -mode batch -messageDb vivado.pb -source top_soccer.tcl
+
+
+****** Vivado v2014.2 (64-bit)
+  **** SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+  **** IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source top_soccer.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Labtools 27-147} -limit 4294967295
+# create_project -in_memory -part xc7a100tcsg324-1
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/0.9/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
+CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - C:/Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/1.0/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.
+# set_property target_language Verilog [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# add_files -quiet C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.runs/dcm_25m_synth_1/dcm_25m.dcp
+# set_property used_in_implementation false [get_files C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.runs/dcm_25m_synth_1/dcm_25m.dcp]
+# read_verilog -library xil_defaultlib {
+#   C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/vga_timing.v
+#   C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/debounce.v
+#   C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/keyboard.v
+#   C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/top_flyinglogo.v
+#   C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/x7seg.v
+#   C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/modcnt.v
+#   C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/count_time.v
+#   C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/game.v
+#   C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/clock_top.v
+#   C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/top_soccer.v
+# }
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/vga_timing.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/debounce.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/keyboard.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/top_flyinglogo.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/x7seg.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/modcnt.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/count_time.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/game.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/clock_top.v]
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/top_soccer.v]
+# read_xdc C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/constrs_1/new/xdc_.xdc
+# set_property used_in_implementation false [get_files C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/constrs_1/new/xdc_.xdc]
+# read_xdc dont_buffer.xdc
+# set_property used_in_implementation false [get_files dont_buffer.xdc]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.cache/wt [current_project]
+# set_property parent.project_dir C:/Users/Lenovo/Desktop/linangame7/linan_game [current_project]
+# catch { write_hwdef -file top_soccer.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top_soccer -part xc7a100tcsg324-1
+Command: synth_design -top top_soccer -part xc7a100tcsg324-1
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 225.883 ; gain = 93.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top_soccer' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/top_soccer.v:23]
+INFO: [Synth 8-638] synthesizing module 'clock_top' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/clock_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'modcnt' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/modcnt.v:23]
+INFO: [Synth 8-256] done synthesizing module 'modcnt' (1#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/modcnt.v:23]
+INFO: [Synth 8-638] synthesizing module 'count_time' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/count_time.v:23]
+INFO: [Synth 8-256] done synthesizing module 'count_time' (2#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/count_time.v:23]
+INFO: [Synth 8-638] synthesizing module 'x7seg' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/x7seg.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/x7seg.v:40]
+INFO: [Synth 8-226] default block is never used [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/x7seg.v:53]
+INFO: [Synth 8-256] done synthesizing module 'x7seg' (3#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/x7seg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clock_top' (4#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/new/clock_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'game' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/game.v:23]
+INFO: [Synth 8-638] synthesizing module 'ps2_keyboard' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ps2_keyboard' (5#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/keyboard.v:23]
+INFO: [Synth 8-638] synthesizing module 'top_flyinglogo' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/top_flyinglogo.v:4]
+	Parameter logo_length bound to: 10'b0000010100 
+	Parameter logo_hight bound to: 10'b0000010100 
+	Parameter logo1_length bound to: 10'b0000001010 
+	Parameter logo1_hight bound to: 10'b0010010110 
+	Parameter logo2_length bound to: 10'b0001001011 
+	Parameter logo2_hight bound to: 10'b0000001010 
+	Parameter logo3_length bound to: 10'b0001001011 
+	Parameter logo3_hight bound to: 10'b0000001010 
+	Parameter logo4_length bound to: 10'b0000001010 
+	Parameter logo4_hight bound to: 10'b0001001011 
+	Parameter logo11_length bound to: 10'b0000001010 
+	Parameter logo11_hight bound to: 10'b0010010110 
+	Parameter logo22_length bound to: 10'b0001001011 
+	Parameter logo22_hight bound to: 10'b0000001010 
+	Parameter logo33_length bound to: 10'b0001001011 
+	Parameter logo33_hight bound to: 10'b0000001010 
+	Parameter logo44_length bound to: 10'b0000001010 
+	Parameter logo44_hight bound to: 10'b0001001011 
+INFO: [Synth 8-638] synthesizing module 'dcm_25m' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.runs/synth_1/.Xil/Vivado-4700-stu49c86b/realtime/dcm_25m_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dcm_25m' (6#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.runs/synth_1/.Xil/Vivado-4700-stu49c86b/realtime/dcm_25m_stub.v:6]
+WARNING: [Synth 8-350] instance 'u0' of module 'dcm_25m' requires 4 connections, but only 3 given [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/top_flyinglogo.v:87]
+INFO: [Synth 8-638] synthesizing module 'vga_640x480' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/vga_timing.v:4]
+	Parameter h_frontporch bound to: 96 - type: integer 
+	Parameter h_active bound to: 144 - type: integer 
+	Parameter h_backporch bound to: 784 - type: integer 
+	Parameter h_total bound to: 800 - type: integer 
+	Parameter v_frontporch bound to: 2 - type: integer 
+	Parameter v_active bound to: 35 - type: integer 
+	Parameter v_backporch bound to: 515 - type: integer 
+	Parameter v_total bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_640x480' (7#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/vga_timing.v:4]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/debounce.v:3]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (8#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/debounce.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/top_flyinglogo.v:413]
+INFO: [Synth 8-256] done synthesizing module 'top_flyinglogo' (9#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/top_flyinglogo.v:4]
+INFO: [Synth 8-256] done synthesizing module 'game' (10#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/game.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top_soccer' (11#1) [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/new/top_soccer.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 259.746 ; gain = 127.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+Loading clock regions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.2/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.2/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.2/data\parts/xilinx/artix7/ConfigModes.xml
+
+Processing XDC Constraints
+Parsing XDC File [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.runs/synth_1/.Xil/Vivado-4700-stu49c86b/dcp/dcm_25m_in_context.xdc] for cell 'g1/u0/u0'
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.runs/synth_1/.Xil/Vivado-4700-stu49c86b/dcp/dcm_25m_in_context.xdc] for cell 'g1/u0/u0'
+Parsing XDC File [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/constrs_1/new/xdc_.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sign'. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/constrs_1/new/xdc_.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'sign'. [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/constrs_1/new/xdc_.xdc:95]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/constrs_1/new/xdc_.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/constrs_1/new/xdc_.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_soccer_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Parsing XDC File [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.runs/synth_1/dont_buffer.xdc]
+Finished Parsing XDC File [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.runs/synth_1/dont_buffer.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 477.633 ; gain = 345.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.runs/synth_1/dont_buffer.xdc, line 4).
+Applied set_property BUFFER_TYPE = NONE for rst. (constraint file  C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.runs/synth_1/dont_buffer.xdc, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 477.633 ; gain = 345.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 477.633 ; gain = 345.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/top_flyinglogo.v:413]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Lenovo/Desktop/linangame7/linan_game/project_2.srcs/sources_1/imports/sources/top_flyinglogo.v:413]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 15    
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 8     
+	   2 Input     10 Bit       Adders := 14    
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	                9 Bit    Wide XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 9     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	               64 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 5     
+	   2 Input     10 Bit        Muxes := 14    
+	   2 Input      9 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 4     
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 22    
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 28    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_soccer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module modcnt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module count_time 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module x7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+Module clock_top 
+Detailed RTL Component Info : 
+Module ps2_keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---XORs : 
+	                9 Bit    Wide XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               64 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module vga_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module debounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module top_flyinglogo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 14    
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input     11 Bit       Adders := 8     
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 5     
+	   2 Input     10 Bit        Muxes := 8     
+	   2 Input      9 Bit        Muxes := 8     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 18    
+	   3 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 19    
+Module game 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 477.633 ; gain = 345.656
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design top_soccer has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 477.633 ; gain = 345.656
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 477.633 ; gain = 345.656
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+----------------+--------------------+----------------------+--------------+-------------------+
+|Module Name | RTL Object     | Inference Criteria | Size (depth X width) | Primitives   | Hierarchical Name | 
++------------+----------------+--------------------+----------------------+--------------+-------------------+
+|top_soccer  | g1/p0/fifo_reg | Implied            | 8 X 8                | RAM32M x 2   | top_soccer/ram__1 | 
++------------+----------------+--------------------+----------------------+--------------+-------------------+
+
+Note: The table shows RAMs generated at current stage. Some RAM generation could be reversed due to later optimizations. Mutiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g1/u0/logo44_y_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\g1/u0/logo4_y_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/speed_cnt_reg[7] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/speed_cnt_reg[6] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/logo44_y_reg[9] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/logo4_y_reg[9] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/vga_data_reg[10] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/vga_data_reg[9] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/vga_data_reg[8] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/vga_data_reg[6] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/vga_data_reg[5] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/vga_data_reg[4] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/vga_data_reg[2] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/vga_data_reg[1] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/u0/vga_data_reg[0] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\c1/u1/h_reg[4] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\c1/u1/h_reg[3] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\c1/u1/h_reg[2] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\c1/u1/h_reg[1] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\c1/u1/h_reg[0] ) is unused and will be removed from module top_soccer.
+WARNING: [Synth 8-3332] Sequential element (\g1/p0/overflow_reg ) is unused and will be removed from module top_soccer.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 507.074 ; gain = 375.098
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 507.074 ; gain = 375.098
+Finished Parallel Section  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 507.074 ; gain = 375.098
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 562.461 ; gain = 430.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 563.387 ; gain = 431.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 592.809 ; gain = 460.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 592.809 ; gain = 460.832
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 592.809 ; gain = 460.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 592.809 ; gain = 460.832
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |dcm_25m       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |dcm_25m |     1|
+|2     |BUFG    |     1|
+|3     |CARRY4  |   127|
+|4     |INV     |     1|
+|5     |LUT1    |    80|
+|6     |LUT2    |   138|
+|7     |LUT3    |    88|
+|8     |LUT4    |   225|
+|9     |LUT5    |   247|
+|10    |LUT6    |   366|
+|11    |MUXF7   |     1|
+|12    |RAM32M  |     2|
+|13    |FDCE    |    82|
+|14    |FDPE    |     1|
+|15    |FDRE    |    92|
+|16    |FDSE    |    23|
+|17    |IBUF    |    11|
+|18    |OBUF    |    40|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |  1527|
+|2     |  c1     |clock_top      |   217|
+|3     |    u0   |modcnt         |   110|
+|4     |    u1   |count_time     |    44|
+|5     |    u2   |x7seg          |    63|
+|6     |  g1     |game           |  1256|
+|7     |    p0   |ps2_keyboard   |   105|
+|8     |    u0   |top_flyinglogo |  1151|
+|9     |      u2 |vga_640x480    |   259|
+|10    |      u3 |debounce       |    20|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 592.809 ; gain = 460.832
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 592.809 ; gain = 460.832
+INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 592.809 ; gain = 411.445
+# write_checkpoint top_soccer.dcp
+# report_utilization -file top_soccer_utilization_synth.rpt -pb top_soccer_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 592.809 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 29 17:33:56 2014...

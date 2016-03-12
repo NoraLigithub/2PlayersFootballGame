@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Dec 28 20:18:36 2014
+# Process ID: 4536
+# Log file: D:/linan_game6/linan_game/vivado.log
+# Journal file: D:/linan_game6/linan_game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\linan_game6\linan_game\project_2.xpr}

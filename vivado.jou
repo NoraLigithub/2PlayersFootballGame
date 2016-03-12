@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:33:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Jan 02 14:32:54 2015
+# Process ID: 816
+# Log file: C:/Users/Lenovo/Desktop/lab13/double_footballgame/vivado.log
+# Journal file: C:/Users/Lenovo/Desktop/lab13/double_footballgame\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\Lenovo\Desktop\lab13\double_footballgame\project_2.xpr}
+open_hw
+connect_hw_server -host localhost -port 60001 -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210274505387A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210274505387A]
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/lab13/double_footballgame/project_2.runs/impl_1/top_soccer.bit} [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/Users/Lenovo/Desktop/lab13/double_footballgame/project_2.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {C:/Users/Lenovo/Desktop/lab13/double_footballgame/project_2.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/Lenovo/Desktop/lab13/double_footballgame/project_2.runs/impl_1/top_soccer.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]

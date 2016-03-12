@@ -1,0 +1,78 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2014/12/27 22:13:04
+// Design Name: 
+// Module Name: keyboard
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module ps2_keyboard(clk,clrn,ps2_clk,ps2_data,data,ready,overflow,count);
+input clk,clrn,ps2_clk,ps2_data;
+output [7:0] data;
+reg [7:0] data;
+output ready;
+reg ready;
+output reg overflow;      // fifo overflow
+output reg [3:0] count;   // count ps2_data bits              
+// internal signal, for test
+reg [9:0] buffer;         // ps2_data bits
+reg [7:0] fifo[7:0];      // data fifo
+reg [2:0] w_ptr,r_ptr;    // fifo write and read pointers
+// detect falling edge of ps2_clk
+reg [2:0] ps2_clk_sync; 
+always @ (posedge clk)
+begin
+ps2_clk_sync <=   {ps2_clk_sync[1:0],ps2_clk};
+end
+wire sampling = ps2_clk_sync[2] & ~ps2_clk_sync[1];
+always @ (posedge clk)
+begin
+if (clrn == 0)   //   reset 
+begin
+count <= 0; w_ptr <= 0; r_ptr <= 0; overflow <= 0;
+end
+else  
+if (sampling) 
+begin
+if (count == 4'd10)
+begin
+if ((buffer[0] == 0) &&   //   start bit
+(ps2_data)        &&   //   stop bit
+(^buffer[9:1]))       //   odd   parity
+begin 
+fifo[w_ptr] <= buffer[8:1];   //   kbd scan code
+w_ptr <= w_ptr+3'b1;
+ready <= 1'b1;
+overflow <= overflow | (r_ptr == (w_ptr + 3'b1));
+end
+count <= 0;      //   for next
+end
+else 
+begin
+buffer[count] <= ps2_data;   //   store ps2_data 
+count <= count + 3'b1;
+end    
+end
+if(ready)  // read to output next data
+begin   
+data = fifo[r_ptr];
+r_ptr <= r_ptr + 3'd1;
+ready <= 1'b0;
+end
+end 
+
+endmodule 
